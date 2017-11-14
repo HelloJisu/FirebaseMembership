@@ -1,5 +1,6 @@
 package com.example.dbwlt.signinin;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -34,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         editTextPassword = (EditText) findViewById(R.id.edit_pwlog);
 
         Button emailloggin = (Button) findViewById(R.id.loginlog);
-        Button joinloggin =(Button) findViewById(R.id.joinlog);
+        Button logginbutton = (Button) findViewById(R.id.joinlog);
 
         emailloggin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,13 +44,13 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        joinloggin.setOnClickListener(new View.OnClickListener() {
+        logginbutton.setOnClickListener(new View.OnClickListener() { //로그인버튼튼
             @Override
-            public void onClick(View v) {
-
+            public void onClick(View view) {
+                Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+                startActivity(intent);
             }
         });
-
     }
 
     private void login(String email,String password){

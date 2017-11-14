@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wide">
+    <TextView
+        android:text="당신의 타입을 알려주세요"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/id"
+        android:textAlignment="inherit"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="80dp"
+        >
+        <RadioButton
+            android:id="@+id/bt1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_long"
+            android:text="고전" />
+
+        <RadioButton
+            android:id="@+id/bt2"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_long"
+            android:layout_marginLeft="50dp"
+            android:text="현대" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        >
+        <RadioButton
+            android:id="@+id/bt3"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_long"
+            android:text="국내" />
+
+        <RadioButton
+            android:id="@+id/bt4"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_long"
+            android:layout_marginLeft="50dp"
+            android:text="국외" />
+    </RadioGroup>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        >
+        <RadioButton
+            android:id="@+id/bt5"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_long"
+            android:text="판타지" />
+
+        <RadioButton
+            android:id="@+id/bt6"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_long"
+            android:layout_marginLeft="50dp"
+            android:text="현실적" />
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        >
+        <RadioButton
+            android:id="@+id/bt7"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_long"
+            android:text="감동"
+            />
+
+        <RadioButton
+            android:id="@+id/bt8"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_long"
+            android:layout_marginLeft="50dp"
+            android:text="코믹"
+            />
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        >
+        <RadioButton
+            android:id="@+id/bt9"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_long"
+            android:text="공주"
+            />
+        <RadioButton
+            android:id="@+id/bt10"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_long"
+            android:layout_marginLeft="50dp"
+            android:text="영웅"
+            />
+    </RadioGroup>
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_long"
+        android:layout_marginTop="40dp"
+        android:text="선택완료" />
+
+</LinearLayout>
